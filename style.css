@@ -218,23 +218,138 @@ input[type=submit] {
 
 /* media queries */
 
-/* On screens that are 680px wide or less, make the menu links stack on top of each other instead of next to each other */
+/* On screens that are 640px wide or less, make the menu links stack on top of each other instead of next to each other */
 
 @media only screen and (max-width:  640px) {
-    /* nav a {
-        display: inline;
-        width: 100%;
-    } */
+    nav  {
+       position: relative;
+       width: 100%;
+       text-align: center; 
+      
+     }
+   nav a {
+   position: relative;
+   display: inline;
+   text-align: center;
+   /* width: 100%; */
+  
+    }
 
+   h1 {
+        text-align: center;
+    }
+
+   .work  {
+       position: relative;
+       align-items: center;
+       width: 100%;
+   } 
+
+   #logo {
+       width: 100%;
+       text-align: center;
+   }
+ 
+    header {
+        position: static;    
+    }
+
+    
     #masthead {
+    position: relative;
     float: none;
     margin-right: 0;
     width: auto;
     border: 0;
-
     }
 
-   /* .container {
+   .container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto; 
+    }
+
+.auth-image {
+ position: relative;
+  width: 100%;
+  }
+}
+
+@media only screen and (min-width:  641px) and (max-width: 768px) {
+
+  nav  {
+           text-align: center;  
+     }
+   nav a {
+    display: inline;      
+     padding-left: 15px;
+     margin-left: 15px;
+     }
+
+#logo {
+       float: left;
+   }
+
+      #masthead {
+    position: relative;
+    float: none;
     width: 100%;
-    display: incline; */
+    border: 0;
+     }
+
+.container {
+  width: 100%;
+  margin: 0 auto; 
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+.container {
+width: 600px;
+ float: left;
+}
+
+  nav a {
+    display: inline;    
+     padding-left: 15px;
+     margin-left: 15px;
+     }
+
+     nav  {
+           text-align: right;  
+}
+
+  #masthead {
+   position: fixed;
+    float: none;
+    width: 100%;
+    border: 0;
+   }
+
+   .work  {
+      width: 500px; 
+      
+   } 
+
+   .work img {
+    /* display: inline; */
+    width: 400px;
+     border: 0 none;
+     opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 400px;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
 }
