@@ -220,55 +220,25 @@ input[type=submit] {
 
 /* On screens that are 640px wide or less, make the menu links stack on top of each other instead of next to each other */
 
-@media only screen and (max-width:  640px) {
-    nav  {
-       position: relative;
-       width: 100%;
-       text-align: center; 
-      
-     }
-   nav a {
-   position: relative;
-   display: inline;
-   text-align: center;
-   /* width: 100%; */
-  
-    }
-
-   h1 {
-        text-align: center;
-    }
-
-   .work  {
-       position: relative;
-       align-items: center;
-       width: 100%;
-   } 
-
-   #logo {
-       width: 100%;
-       text-align: center;
-   }
- 
-    header {
-        position: static;    
-    }
-
-    
-    #masthead {
-    position: relative;
-    float: none;
-    margin-right: 0;
-    width: auto;
-    border: 0;
-    }
-
-   .container {
-  position: relative;
+@media only screen and (max-width: 640px) {
+  nav {
   width: 100%;
-  margin: 0 auto; 
-    }
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;  
+}
+  #logo {
+       width: 100%;
+   }
 
+   #main-container {
+       padding-top: 160px;   
+}
+
+.container{
+    width: 100%;
+}
+  
 .auth-image {
  position: relative;
   width: 100%;
@@ -286,11 +256,11 @@ input[type=submit] {
      margin-left: 15px;
      }
 
-#logo {
+   #logo {
        float: left;
    }
 
-      #masthead {
+     #masthead {
     position: relative;
     float: none;
     width: 100%;
