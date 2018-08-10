@@ -249,7 +249,7 @@ input[type=submit] {
 
   nav  {
            text-align: center;  
-           padding-right: 20px;
+           padding-right: 70px;
            }
    nav a {
     display: inline;      
@@ -280,18 +280,18 @@ input[type=submit] {
 
      .main-section {
         width: 100%;
-         padding-top: 30px;
-         margin-top: 150px;
-         }
+        max-width: 700px;
+        padding-top: 30px;
+        margin-top: 150px;
+      }
   
  .work {
-  /* position: relative; */
-  /* float: left; */
-  width: 274px;
-  margin: 20px 0 25px;
-  /* overflow: auto; */
-  display: inline;
+  position: relative;
+  width: 250px;
+  /* float: initial; */
+  /* margin: 20px 0 25px;    */
 }
+
     
 
 }
